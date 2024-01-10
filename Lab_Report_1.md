@@ -38,9 +38,10 @@ README
 ## cat
 1. An example of using the command with no arguments.
 ```
-#input will have no prompt 
+#input will have no prompt before it and return will only ouput the input itself, CTRL+D was used to exit the cat command
 [user@sahara ~]$ cat
 1
 1
 2
 2
+```
