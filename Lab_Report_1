@@ -1,0 +1,46 @@
+# CSE 15L Lab Report 1
+
+## cd
+1. An example of using the command with no arguments.
+```
+[user@sahara ~]$ cd
+[user@sahara ~]$
+```
+2. An example of using the command with a path to a directory as an argument.
+```
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$ 
+```
+3.An example of using the command with a path to a file as an argument.
+```
+[user@sahara ~/lecture1]$ cd README
+bash: cd: README: Not a directory
+```
+---
+## ls
+1. An example of using the command with no arguments.
+```
+[user@sahara ~]$ ls
+lecture1
+```
+2. An example of using the command with a path to a directory as an argument.
+```
+[user@sahara ~]$ ls lecture1
+Hello.class  Hello.java  messages  README
+```
+3.An example of using the command with a path to a file as an argument.
+```
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$ ls README
+README
+```
+---
+## cat
+1. An example of using the command with no arguments.
+```
+#input will have no prompt 
+[user@sahara ~]$ cat
+1
+1
+2
+2
