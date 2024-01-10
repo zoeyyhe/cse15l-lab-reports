@@ -66,20 +66,21 @@ README
 ## cat
 1. An example of using the command with no arguments.
 ```
-#input will have no prompt before it and return will only ouput the input itself, CTRL+D was used to exit the cat command
 [user@sahara ~]$ cat
 1
 1
 2
 2
 ```
-> 
+> cat is a command used to print the contents of one or more files given by the paths, when no argument is given, input will have no prompt before it and return will only ouput the input itself, CTRL+D was used to exit the cat command
+> *Explaination given by online information: it reads data from its standard input and write them to its standard output
 
 2. An example of using the command with a path to a directory as an argument.
 ```
 [user@sahara ~]$ cat lecture1
 cat: lecture1: Is a directory
 ```
+> cat is ran with a path to a directory, since cat is used to print the contents and folders is not a file, therefore it shows an error that the given argument is a directory.
 
 3.An example of using the command with a path to a file as an argument.
 ```
@@ -90,3 +91,7 @@ To use this program:
 javac Hello.java
 java Hello messages/en-us.txt
 ```
+> cat is ran with a path to a file, therefore it print the contents stored in the given file
+
+
+---
