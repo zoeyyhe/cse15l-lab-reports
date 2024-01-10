@@ -45,3 +45,17 @@ README
 2
 2
 ```
+2. An example of using the command with a path to a directory as an argument.
+```
+[user@sahara ~]$ cat lecture1
+cat: lecture1: Is a directory
+```
+3.An example of using the command with a path to a file as an argument.
+```
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$ cat README
+To use this program:
+
+javac Hello.java
+java Hello messages/en-us.txt
+```
