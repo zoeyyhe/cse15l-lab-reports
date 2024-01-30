@@ -1,4 +1,5 @@
-# Codes
+# Part 1
+## Codes
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -58,3 +59,9 @@ class ChatServer {
 
 ## Current Page
 ![Image3](lab2sc3.png)
+
+---
+
+# Part 2
+![Imagepublic](lab2publickey.png)
+![Imagelogin](lab2login.png)
