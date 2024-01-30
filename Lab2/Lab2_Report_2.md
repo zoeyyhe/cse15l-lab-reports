@@ -43,7 +43,8 @@ class ChatServer {
 }
 ```
 ## Add Message 1
- ![Image1](lab2sc1.png)
+ <img src="lab2sc1.png" width="800" />
+
  
 1) In my code, method **handleRequest** of the **Handler** class is called.
 2) The relevant arguments are: ```URI url```, the URL object of the request, it is ```"/add-message?s=Hello&user=jpolitz"```. Values of relevant fields of **Handler** class are ```user_message```.
@@ -52,7 +53,8 @@ class ChatServer {
 
  
 ## Add Message 2
-![Image2](lab2sc2.png)
+<img src="lab2sc2.png" width="800" />
+
 
 1) In my code, method **handleRequest** of the **Handler** class is called.
 2) The relevant arguments are: ```URI url```, the URL object of the request, it is ```"/add-message?s=TeeHee&user=Zoey"```. Values of relevant fields of **Handler** class are ```user_message```.
@@ -61,6 +63,7 @@ class ChatServer {
 
 ## Current Page
 ![Image3](lab2sc3.png)
+
 
 ---
 
