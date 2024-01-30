@@ -54,8 +54,8 @@ class ChatServer {
 ![Image2](lab2sc2.png)
 1) In my code, method **handleRequest** of the **Handler** class is called.
 2) The relevant arguments are: ```URI url```, the URL object of the request, it is ```"/add-message?s=TeeHee&user=Zoey"```. Values of relevant fields of **Handler** class are ```user_message```.
-3) ```user_message``` changes everytime add-message is called, before any method is called, it is a string with ```"jpolitz: Hello"```. After add-message is called, it is updated with the new user and message ```Zoey: TeeHee``` which becomes ```"jpolitz: Hello\n Zoey:TeeHee"```.
-
+3) ```user_message``` changes everytime add-message is called, before any method is called, it is a string with ```"jpolitz: Hello"```. After add-message is called, it is updated with the new user and message:
+```Zoey: TeeHee``` which becomes ```"jpolitz: Hello\n Zoey:TeeHee"```.
 
 ## Current Page
 ![Image3](lab2sc3.png)
