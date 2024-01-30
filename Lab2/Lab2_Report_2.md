@@ -42,8 +42,19 @@ class ChatServer {
 }
 ```
 ## Add Message 1
- ![Image1](labsc1.png)
+ ![Image1](lab2sc1.png)
+1) In my code, method **handleRequest** of the **Handler** class is called.
+2) The relevant arguments are: ```URI url```, the URL object of the request, it is ```"/add-message?s=Hello&user=jpolitz"```. Values of relevant fields of **Handler** class are ```user_message```.
+3) ```user_message``` changes everytime add-message is called, before any method is called, it is an empty string. After add-message is called, it is updated with the new user and message ```jpolitz: Hello```.
+
+
+ 
 ## Add Message 2
-![Image2](labsc2.png)
+![Image2](lab2sc2.png)
+1) In my code, method **handleRequest** of the **Handler** class is called.
+2) The relevant arguments are: ```URI url```, the URL object of the request, it is ```"/add-message?s=TeeHee&user=Zoey"```. Values of relevant fields of **Handler** class are ```user_message```.
+3) ```user_message``` changes everytime add-message is called, before any method is called, it is a string with ```"jpolitz: Hello"```. After add-message is called, it is updated with the new user and message ```Zoey: TeeHee``` which becomes ```"jpolitz: Hello\n Zoey:TeeHee"```.
+
+
 ## Current Page
-![Image3](labsc3.png)
+![Image3](lab2sc3.png)
