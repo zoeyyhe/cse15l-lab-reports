@@ -63,5 +63,15 @@ class ChatServer {
 ---
 
 # Part 2
-![Imagepublic](lab2publickey.png)
+**absolute path to private key & public key for SSH key for ```ieng6```**
+> The one end with. pub is public and the first one is private
+![Imageprivate](lab2private.png)
+
+**Log in without being asked for a passward**
 ![Imagelogin](lab2login.png)
+
+---
+
+# Part 3
+
+In week 2 and 3, I learned about the structure of URL and how to code a files handling the requests, I am more confident with websites now. I also learned new commands such as ```ssh```. I also learned about Debugging and the importance of having a good attitude when programming from the assigned readings. 
