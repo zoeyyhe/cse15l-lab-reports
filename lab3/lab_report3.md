@@ -39,5 +39,19 @@ public class ArrayTests {
 *The symptom of the function reverseInPlace:
 ![sca](lab3a.png)
 
-is that the function overwrites the original elements of the array while performing the reversal.
-
+*The bug is that the function overwrites the original elements of the array while performing the reversal. To address the bug, modifications need to be made within the for-loop:
+* **Before**: The assignment ```arr[i] = arr[arr.length - i - 1]; ```replaces each element with its corresponding element from the reversed position.
+```
+      for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  ```
+* **After**: 
+```
+    for (int i = 0; i < arr.length / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+}
+```
+* **Explaination**: In this corrected version, a temp variableis used to store the element being swapped, The loop runs only half the length of the array, swapping elements from both ends and moving towards the center. 
