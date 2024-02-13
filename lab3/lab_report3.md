@@ -1,12 +1,13 @@
-##Bug: reverseInPlace
+## Bug: reverseInPlace
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
   }
-
-##correct version:
+```
+## correct version:
+```
 static void reverseInPlace(int[] arr) {
     for (int i = 0; i < arr.length / 2; i++) {
         // Swap elements at i and arr.length - i - 1
@@ -16,7 +17,7 @@ static void reverseInPlace(int[] arr) {
     }
 }
 ```
-##Failure-inducing
+## Failure-inducing
 ```
 public class ArrayTests {
 	@Test 
@@ -55,3 +56,17 @@ public class ArrayTests {
 }
 ```
 * **Explaination**: In this corrected version, a temp variableis used to store the element being swapped, The loop runs only half the length of the array, swapping elements from both ends and moving towards the center. 
+
+# Part 2
+## **Find**
+
+1. ```-name```: Searches for files and directories with the specified name.
+Example: find /path/to/search -name "filename.txt"
+2. ```-type```: Filters results based on the type of file (e.g., regular file, directory, symbolic link).
+Example: find /path/to/search -type d (to find directories).
+3. ```-mtime```: Finds files based on their modification time in days.
+Example: find /path/to/search -mtime -7 (to find files modified within the last 7 days).
+4. ```-exec```: Executes a command on the found files or directories.
+Example: find /path/to/search -name "*.txt" -exec rm {} \; (to delete all text files found).
+
+*above commands are from ChatGPT, my given prompt: Can you give me some examples of command-line options for ```find```?
