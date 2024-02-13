@@ -36,5 +36,8 @@ public class ArrayTests {
 	}
 }
 ```
-*The symptom of the function reverseInPlace is that the function overwrites the original elements of the array while performing the reversal.
+*The symptom of the function reverseInPlace:
+![sca](lab3a.png)
+
+is that the function overwrites the original elements of the array while performing the reversal.
 
