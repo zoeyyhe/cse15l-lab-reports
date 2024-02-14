@@ -1,3 +1,5 @@
+# Lab Report 3
+# Part 1
 ## Bug: reverseInPlace
 ```
 static void reverseInPlace(int[] arr) {
@@ -67,12 +69,14 @@ Example 1:
 [user@sahara ~/docsearch/technical]$ find -name 911*
 ./911report
 ```
+(find all directories and files that names starts with 911)
 Example 2:
 ```
 [user@sahara ~/docsearch/technical]$ find ./911report -name "chapter-1.txt"
 ./911report/chapter-1.txt
 ```
-2. ```-type```: Filters results based on the type of file (e.g., regular file, directory, symbolic link).
+(find all files that is "chapter-1.txt" within the 911report directory.)
+2. ```-type```: Filters results based on the type of file 
 Example 1:
 ```
 [user@sahara ~/docsearch/technical]$ find -type d
@@ -80,6 +84,7 @@ Example 1:
 ./biomed
 ./911report
 ```
+(find all type as directories in the current path)
 Example 2:
 ```
 [user@sahara ~/docsearch/technical]$ find ./911report -type f
@@ -101,6 +106,7 @@ Example 2:
 ./911report/chapter-1.txt
 ./911report/chapter-12.txt
 ```
+(find all type files in the directory 911report directory.)
 3. ```-mtime```: Finds files based on their modification time in days.
 Example 1:
 ```
@@ -139,9 +145,17 @@ Example 1:
 [user@sahara ~/docsearch/technical]$ find -iname "911REPORT"
 ./911report
 ```
+(find all files and directories contain "911REPORT" where cases doesn't matter)
 Example 2:
 ```
 [user@sahara ~/docsearch/technical]$ find ./911report -iname "ChAPteR-1.txt"
 ./911report/chapter-1.txt
 ```
-*above commands are from ChatGPT, my given prompt: Can you give me some examples of command-line options for ```find```?
+(find all files name "ChAPteR-1.txt" in 911report where cases doesn't matter)
+
+## Source Citation
+I googled "command line options for find" and read:
+https://www.man7.org/linux/man-pages/man1/find.1.html
+where I found example of -iname, -type, -name, and -mtime
+* I also used ChatGPT, my given prompt: Can you explain to me the  command-line options -iname, -type, -name, and -mtime for ```find``` ?
+ChatGPT provided examples for me to better interpret the function of them and then I did similar approaches with these command lines in my terminals for the 8 examples which I came up with my own.
