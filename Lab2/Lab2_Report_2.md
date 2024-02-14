@@ -71,7 +71,9 @@ class ChatServer {
 **absolute path to private key & public key for SSH key for ```ieng6```**
 > The one end with. pub is public and the first one is private
 ![Imageprivate](lab2private.png)
-
+> The absolute path where public key is located in ieng6
+![waaa](lab2revise.png)
+/home/linux/ieng6/oce/25/jih084/.ssh/authorized_keys
 **Log in without being asked for a passward**
 ![Imagelogin](lab2login.png)
 
