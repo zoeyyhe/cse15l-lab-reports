@@ -161,6 +161,7 @@ where I found example of -iname, -type, -name, and -mtime
 * my given prompt: Can you explain to me the  command-line options -iname, -type, -name, and -mtime for ```find``` ?
 ChatGPT provided examples for me to better interpret the function of them and then I did similar approaches with these command lines in my terminals for the 8 examples which I came up with my own.
 * ChatGPT output:
+  
 ```
 Certainly! The find command in Unix-like operating systems is a powerful tool for searching and locating files and directories based on various criteria. Here's an explanation of the command-line options you mentioned:
 
@@ -212,9 +213,11 @@ bash
 Copy code
 find /home/user -mtime -7
 ```
+
 __Since I mainly use ChatGPT for example reference, I used the example codes and modified them to fit into our working directories and files__
 * ChatGPT:
-```-iname:
+```
+-iname:
 Usage: find /path/to/search -iname "filename
 -type:
 Usage: find /path/to/search -type f
