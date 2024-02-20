@@ -213,7 +213,8 @@ Copy code
 find /home/user -mtime -7
 ```
 __Since I mainly use ChatGPT for example reference, I used the example codes and modified them to fit into our working directories and files__
-* ChatGPT: ```-iname:
+* ChatGPT:
+```-iname:
 Usage: find /path/to/search -iname "filename
 -type:
 Usage: find /path/to/search -type f
@@ -222,7 +223,8 @@ Usage: find /path/to/search -mtime +7
 -name:
 Usage: find /path/to/search -name "filename"
 ```
-* My revision: ``` 
+* My revision:
+``` 
 [user@sahara ~/docsearch/technical]$ find -iname "911REPORT" 
 [user@sahara ~/docsearch/technical]$ find -type d
 [user@sahara ~/docsearch/technical]$ find -mtime -1 -name "chapter-1.txt"
