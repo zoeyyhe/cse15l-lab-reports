@@ -157,5 +157,75 @@ Example 2:
 I googled "command line options for find" and read:
 https://www.man7.org/linux/man-pages/man1/find.1.html
 where I found example of -iname, -type, -name, and -mtime
-* I also used ChatGPT, my given prompt: Can you explain to me the  command-line options -iname, -type, -name, and -mtime for ```find``` ?
+* I also used ChatGPT:
+* my given prompt: Can you explain to me the  command-line options -iname, -type, -name, and -mtime for ```find``` ?
 ChatGPT provided examples for me to better interpret the function of them and then I did similar approaches with these command lines in my terminals for the 8 examples which I came up with my own.
+* ChatGPT output:
+```
+Certainly! The find command in Unix-like operating systems is a powerful tool for searching and locating files and directories based on various criteria. Here's an explanation of the command-line options you mentioned:
+
+-iname:
+
+Purpose: Case-insensitive name matching.
+Usage: find /path/to/search -iname "filename"
+This option is used to perform a case-insensitive search for files or directories with a specified name. It is similar to -name, but it ignores the case of the characters in the name.
+
+Example:
+
+bash
+Copy code
+find /home/user -iname "example.txt"
+-type:
+
+Purpose: Specifies the type of the file (regular file, directory, symbolic link, etc.).
+Usage: find /path/to/search -type f
+This option is used to filter the search results based on the type of file. Common arguments for -type include:
+
+f: Regular file
+d: Directory
+l: Symbolic link
+Example:
+
+bash
+Copy code
+find /home/user -type d
+-name:
+
+Purpose: Case-sensitive name matching.
+Usage: find /path/to/search -name "filename"
+This option is used to search for files or directories with a specified name in a case-sensitive manner.
+
+Example:
+
+bash
+Copy code
+find /home/user -name "example.txt"
+-mtime:
+
+Purpose: Searches for files based on modification time.
+Usage: find /path/to/search -mtime +7
+This option is used to find files that were modified more than a certain number of days ago. The argument can be a number (exact days), -n (less than n days ago), +n (more than n days ago).
+
+Example:
+
+bash
+Copy code
+find /home/user -mtime -7
+```
+__Since I mainly use ChatGPT for example reference, I used the example codes and modified them to fit into our working directories and files__
+* ChatGPT: ```-iname:
+Usage: find /path/to/search -iname "filename
+-type:
+Usage: find /path/to/search -type f
+-mtime:
+Usage: find /path/to/search -mtime +7
+-name:
+Usage: find /path/to/search -name "filename"
+```
+* My revision: ``` 
+[user@sahara ~/docsearch/technical]$ find -iname "911REPORT" 
+[user@sahara ~/docsearch/technical]$ find -type d
+[user@sahara ~/docsearch/technical]$ find -mtime -1 -name "chapter-1.txt"
+[user@sahara ~/docsearch/technical]$ find -name 911*
+```
+Where I refered to ChatGPT and used a similar format except I change the <filename> and type.f to type.d and paths to search based on my working directories and files.
