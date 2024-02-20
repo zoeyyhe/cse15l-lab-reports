@@ -213,6 +213,7 @@ bash
 Copy code
 find /home/user -mtime -7
 ```
+?
 
 __Since I mainly use ChatGPT for example reference, I used the example codes and modified them to fit into our working directories and files__
 * ChatGPT:
