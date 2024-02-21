@@ -234,4 +234,4 @@ Usage: find /path/to/search -name "filename"
 [user@sahara ~/docsearch/technical]$ find -mtime -1 -name "chapter-1.txt"
 [user@sahara ~/docsearch/technical]$ find -name 911*
 ```
-Where I refered to ChatGPT and used a similar format except I change the <filename> and type.f to type.d and paths to search based on my working directories and files.
+Where I refered to ChatGPT and used a similar format except I change the `filename` and `type.f` to `type.d` and `paths` to search based on my working directories and files.
