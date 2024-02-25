@@ -1,21 +1,42 @@
 # Lab Report 4 - Vim
 
-Key pressed: 
-- `ssh jih084@ieng6-201.ucsd.edu` + `git clone <ssh lab7 url>` + `cd lab7/` #cd to working directory
+1) Step 4: 
+- Key pressed: `ssh jih084@ieng6-201.ucsd.edu` + `<ENTER>`
+> `ssh` log into ieng6 with my account
+![Image1](loginlab7.png)	
+
+2) Step 5:
+
+- Key pressed: `git clone <ssh lab7 url>` + `<ENTER>` + `cd lab7/` + `<ENTER>`  #cd to working directory
+> `git clone` clones fork of the respository from Github account using 'SSH' URL, `cd` changes current directory to lab7/
 ![Image1](cdlab7.png)	
 
--  `bash test.sh` #complies & run tests
+3) Step 6:
+- Key pressed: `bash test.sh` + `<ENTER>`
+> `bash` calls the bash file `test.sh` which contains code that complies & run tests, demonstrating that some test has failed
 ![Image2](bashran1.png)
 
-- `cat ListExamples.java` #Check the codes for debug
-- `vim ListExamples.java` #Edit file in terminal: `<esc>` + `:44` + `e` + `x` + `i` + `<esc>` + `:wq` #edit save then exit
+4）Step 7:
+- Key pressed: `cat ListExamples.java` + `<ENTER>`
+- `vim ListExamples.java`: `<esc>` + `:44` + `e` + `x` + `i` + `2`+ `<esc>` + `:wq`
+> `cat` prints the file in terminal to check the codes before debugging
+> `vim` enters vim mode to edit file within the terminal
+> `:44` goes to line 44 where I found the bug with cat, `e` goes to the last character of the current word, `x` deletes the last character, `i` changes vim mode to insert, where I change  `1` to `2`, after modification is done,  `<esc>` exits the insert mode and `:wq` saves the edit of the file and exit.
+
 ![Image3](vimlab7.png)	
 
-- `<up><up><enter>` to retrive `bash test.sh` #rerun test ensure bug is fixed
+5) Step 8:
+- Key pressed: `<up><up><enter>`
+> `<up><up>` with arrow key goes up 2 line of command, to retrive `bash test.sh` in the history so I can rerun test ensure bug is fixed
 ![Image4](bash2.png)	
 
-- `git status` #checks if changes are saved
-- `git add . ` #Add changes
+6) Step 9:
+- Key pressed: `git status`
+>  Checks if changes are saved in the local Git repository.
+- `git add . `
+> Adds all changes to the staging area, preparing them for a commit.
 - `git commit -m "test"`
-- `git push` #push changes to github
+> Commits the staged changes with a commit message "test" describing the changes made.
+- `git push`
+> Pushes the committed changes to the remote repository on GitHub
 ![Image5](lab7push.png)	
