@@ -44,12 +44,13 @@ I see! I noticed {symptoms...}
 And I found that the bug is that the function overwrites the original elements of the array while performing the reversal. 
 
 4. File & directory needed:
-   The contents of each file before fixing the bug:
-   given in the inital post, `ArrayExamples.java` storing the method, `ArrayTest.java` storing the 2 test cases.
-![Image](lab5a.png) ![Image](lab5b.png)	
+- The contents of each file before fixing the bug:
+given in the inital post, `ArrayExamples.java` storing the method, `ArrayTest.java` storing the 2 test cases.
+![Image](lab5a.png) 
+![Image](lab5b.png)	
 
-   The full command line to trigger the bug:
-   A description of what to edit to fix the bug:
+- The full command line to trigger the bug:
+- A description of what to edit to fix the bug:
 * **Before**: 
 ```
       for(int i = 0; i < arr.length; i += 1) {
